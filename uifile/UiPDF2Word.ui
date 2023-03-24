@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="ttk.Frame" id="UiPDF2Word" named="True">
+    <property name="height">200</property>
+    <property name="width">300</property>
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Labelframe" id="FramePDFList" named="True">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">PDF List</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="padx">4</property>
+          <property name="pady">4</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Treeview" id="Tree" named="True">
+            <property name="selectmode">browse</property>
+            <property name="show">headings</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="fill">both</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">left</property>
+            </layout>
+            <child>
+              <object class="ttk.Treeview.Column" id="ColumnDirName">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">center</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">true</property>
+                <property name="text" translatable="yes">Folder</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">200</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="ColumnFileName">
+                <property name="column_anchor">w</property>
+                <property name="heading_anchor">center</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">true</property>
+                <property name="text" translatable="yes">File Name</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">200</property>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview.Column" id="ColumnPDFPage" named="True">
+                <property name="column_anchor">center</property>
+                <property name="heading_anchor">center</property>
+                <property name="minwidth">20</property>
+                <property name="stretch">true</property>
+                <property name="text" translatable="yes">Page Num</property>
+                <property name="tree_column">false</property>
+                <property name="visible">true</property>
+                <property name="width">100</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Scrollbar" id="ScrollbarPDFList" named="True">
+            <property name="orient">vertical</property>
+            <layout manager="pack">
+              <property name="fill">y</property>
+              <property name="pady">4</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonAddPDF" named="True">
+            <property name="command" type="command" cbtype="simple">add_pdf</property>
+            <property name="text" translatable="yes">Add PDF</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonRemovePDF" named="True">
+            <property name="command" type="command" cbtype="simple">remove_pdf</property>
+            <property name="text" translatable="yes">Remove PDF</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonRemoveAll">
+            <property name="command" type="command" cbtype="simple">remove_all</property>
+            <property name="text" translatable="yes">Remove All</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator">
+            <property name="orient">horizontal</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="padx">4</property>
+              <property name="pady">8</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonMoveUp">
+            <property name="command" type="command" cbtype="simple">move_up</property>
+            <property name="text" translatable="yes">Move Up</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonMoveDown">
+            <property name="command" type="command" cbtype="simple">move_down</property>
+            <property name="text" translatable="yes">Move Down</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">bottom</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="FramePDFFile">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Converted Folder</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="fill">x</property>
+          <property name="padx">4</property>
+          <property name="pady">4</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Entry" id="EntryPDFFile">
+            <property name="state">readonly</property>
+            <property name="textvariable">string:excel_dir</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="fill">x</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ButtonPDFFile">
+            <property name="command" type="command" cbtype="simple">set_excel_folder</property>
+            <property name="text" translatable="yes">Browser</property>
+            <layout manager="pack">
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">4</property>
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="CheckbuttonSourceFileFolder" named="True">
+            <property name="text" translatable="yes">Source Folder</property>
+            <layout manager="pack">
+              <property name="ipadx">2</property>
+              <property name="padx">4</property>
+              <property name="pady">2</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="FrameProcess">
+        <property name="text" translatable="yes">PDF To Word</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="fill">x</property>
+          <property name="padx">4</property>
+          <property name="pady">4</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="ButtonProcess">
+            <property name="command" type="command" cbtype="simple">process</property>
+            <property name="state">disabled</property>
+            <property name="text" translatable="yes">Convert</property>
+            <property name="width">11</property>
+            <layout manager="pack">
+              <property name="ipadx">2</property>
+              <property name="padx">10</property>
+              <property name="pady">4</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

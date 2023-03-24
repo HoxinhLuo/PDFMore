@@ -1,0 +1,9 @@
+ordered-set
+Pillow
+psutil
+PyMuPDF
+ttkbootstrap
+pdfplumber
+openpyxl
+tkinterdnd2
+pdf2docx

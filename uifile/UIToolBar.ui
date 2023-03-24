@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="ttk.Frame" id="statusBar" named="True">
+    <property name="height">40</property>
+    <property name="width">500</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Button" id="mergepdfbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">merge.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator1">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="splitpdfbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">split.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator2">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="rotatepdfbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">rotate.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator3">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="compresspdfbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">compress.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator4">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="extractimagebtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">extractimage.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator5">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="extracttextbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">extracttext.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator6">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="pdf2imagebtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">pdf2image.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator7">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="image2pdf" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">image2pdf.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator9">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="pdf2xlsxbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">pdf2excel.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator8">
+        <property name="orient">vertical</property>
+        <layout manager="pack">
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="xlsx2pdfbtn" named="True">
+        <property name="command" type="command" cbtype="with_wid">set_operate</property>
+        <property name="image">excel2pdf.png</property>
+        <layout manager="pack">
+          <property name="padx">2</property>
+          <property name="side">left</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
