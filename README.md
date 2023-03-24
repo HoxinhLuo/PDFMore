@@ -1,5 +1,7 @@
 # PDFMore
 
+[[English]](https://github.com/HoxinhLuo/PDFMore/blob/main/README.md)  [[简体中文]](https://github.com/HoxinhLuo/PDFMore/blob/main/README_zh.md)
+
 
 **PDFMore**, an application used to operate PDF, wrote by using Python. Based on ttkbootstrap, it looks more beautiful rather than traditional tk/ttk style. The project is based on the project [PDFeXpress](https://github.com/chianjin/PDFeXpress)
 
@@ -51,7 +53,7 @@ and install or unzip it, run `PDFMore.exe`.
 
 ## Build
 
-If you want to build the application yourself. Please follow these steps below(You need to install pyinstaller first). And virtual python environment recommend:
+If you want to build the application yourself. Please follow these steps below(You need to install pyinstaller first). It is recommended to use a python virtual environment:
 
 ```shell
 > git clone https://github.com/HoxinhLuo/PDFMore.git
