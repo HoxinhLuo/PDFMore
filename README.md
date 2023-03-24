@@ -1,7 +1,7 @@
 # PDFMore
 
 
-**PDFMore**, an application used to operate PDF, wrote by using Python. Based on ttkbootstrap, it looks more beautiful rather than traditional tk/ttk style.
+**PDFMore**, an application used to operate PDF, wrote by using Python. Based on ttkbootstrap, it looks more beautiful rather than traditional tk/ttk style. The project is based on the project [PDFeXpress](https://github.com/chianjin/PDFeXpress)
 
 ![Merge PDF](preview/merge.png "merge")
 
