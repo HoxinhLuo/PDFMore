@@ -3,11 +3,11 @@
 
 **PDFMore**, an application used to operate PDF, wrote by using Python. Based on ttkbootstrap, it looks more beautiful rather than traditional tk/ttk style.
 
-![Merge PDF](https://github.com/HoxinhLuo/PDFMore/preview/merge.png "merge")
+![Merge PDF](https://github.com/HoxinhLuo/PDFMore/tree/main/preview/merge.png "merge")
 
-![Split PDF](https://github.com/HoxinhLuo/PDFMore/preview/split.png "split")
+![Split PDF](https://github.com/HoxinhLuo/PDFMore/tree/main/preview/split.png "split")
 
-![Rotate PDF](https://github.com/HoxinhLuo/PDFMore/preview/merge.png "rotate")
+![Rotate PDF](https://github.com/HoxinhLuo/PDFMore/tree/main/preview/merge.png "rotate")
 
 ## Developing Environment
 
