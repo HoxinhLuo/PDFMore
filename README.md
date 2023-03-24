@@ -51,7 +51,7 @@ and install or unzip it, run `PDFMore.exe`.
 
 ## Build
 
-If you want to build the application yourself. Please follow these steps below:
+If you want to build the application yourself. Please follow these steps below(You need to install pyinstaller first). And virtual python environment recommend:
 
 ```shell
 > git clone https://github.com/HoxinhLuo/PDFMore.git
